@@ -27,7 +27,7 @@ app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 app.use(express.json()); // Parse JSON bodies
 app.use('/axios', express.static('node_modules/axios/dist')); // Serve axios library statically
 
-// ROUTES
+// Routes
 app.use('/api/members', membersRoutes);
 app.use('/api/shifts', shiftsRoutes);
 
